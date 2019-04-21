@@ -3,6 +3,10 @@ html {
     transition: all 0.5s ease-in;
 }
 
+.margin-top-16 {
+    margin-top: 16px;
+}
+
 .navbar-brand {
     font-family: 'Lobster', cursive;
 }
@@ -46,11 +50,13 @@ html {
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     color: black;
-    font-size: 24px;
+    font-size: 32px;
 }
 
 .about-description {
     text-align: justify;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
 }
 
 .footer {
