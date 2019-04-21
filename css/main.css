@@ -38,6 +38,17 @@ html {
     line-height: 80px;
 }
 
+.about {
+    margin-top: 40px;
+}
+
+.about-header {
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+    color: black;
+    font-size: 24px;
+}
+
 .footer {
     text-transform: uppercase;
     color: #666;
