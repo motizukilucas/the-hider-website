@@ -46,6 +46,12 @@ html {
     margin-top: 40px;
 }
 
+.about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .about-header {
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
