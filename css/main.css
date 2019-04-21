@@ -1,0 +1,55 @@
+html {
+    opacity: 0;
+    transition: all 0.5s ease-in;
+}
+
+.navbar-brand {
+    font-family: 'Lobster', cursive;
+}
+
+.hero-background {
+    background-image: url("../img/hero-background.jpg");
+    height: 480px;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-background-colorOverlay {
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    /* background: radial-gradient(rgba(0, 0, 0, 0.4) 5%, rgba(0, 0, 0, 0.6) 55%, rgb(0, 0, 0, 1) 70%); */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+.hero-name {
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    text-shadow: 2px 2px 4px #111;
+    margin-bottom: 0;
+    font-size: 80px;
+    line-height: 80px;
+}
+
+.footer {
+    text-transform: uppercase;
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 126px;
+    margin-top: 126px;
+}
+
+@media only screen and (max-width: 540px) {
+    .hero-background {
+        height: 320px;
+    }
+}
