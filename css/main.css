@@ -50,7 +50,8 @@ html {
     font-family: 'Roboto Condensed', sans-serif;
     text-transform: uppercase;
     color: black;
-    font-size: 32px;
+    font-size: 48px;
+    line-height: 48px;
 }
 
 .about-description {
@@ -77,5 +78,10 @@ html {
     .hero-name {
         font-size: 32px;
         line-height: 42px;
+    }
+
+    .about-header {
+        font-size: 32px;
+        line-height: normal;
     }
 }
