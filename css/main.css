@@ -50,6 +50,11 @@ html {
 
 @media only screen and (max-width: 540px) {
     .hero-background {
-        height: 320px;
+        height: 400px;
+    }
+
+    .hero-name {
+        font-size: 32px;
+        line-height: 42px;
     }
 }
