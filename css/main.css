@@ -66,6 +66,10 @@ html {
     font-size: 13px;
 }
 
+.about-image {
+    max-width: 320px;
+}
+
 .footer {
     text-transform: uppercase;
     color: #666;
@@ -89,5 +93,9 @@ html {
     .about-header {
         font-size: 32px;
         line-height: normal;
+    }
+
+    .about-image {
+        max-width: 280px;
     }
 }
