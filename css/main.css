@@ -70,6 +70,10 @@ html {
     max-width: 320px;
 }
 
+.about-feature-spacing {
+    margin-top: 128px;
+}
+
 .footer {
     text-transform: uppercase;
     color: #666;
@@ -97,5 +101,9 @@ html {
 
     .about-image {
         max-width: 280px;
+    }
+
+    .about-feature-spacing {
+        margin-top: 64px;
     }
 }
