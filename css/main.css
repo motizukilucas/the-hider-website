@@ -114,4 +114,8 @@ html {
     .secound-feature-desktop {
         display: none;
     }
+
+    .secound-feature-mobile {
+        display: block;
+    }
 }
