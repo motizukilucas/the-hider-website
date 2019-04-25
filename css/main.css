@@ -84,6 +84,10 @@ html {
     margin-top: 126px;
 }
 
+.secound-feature-mobile {
+    display: none;
+}
+
 @media only screen and (max-width: 540px) {
     .hero-background {
         height: 400px;
@@ -105,5 +109,9 @@ html {
 
     .about-feature-spacing {
         margin-top: 64px;
+    }
+
+    .secound-feature-desktop {
+        display: none;
     }
 }
