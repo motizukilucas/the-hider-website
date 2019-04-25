@@ -88,6 +88,10 @@ html {
     display: none;
 }
 
+.third-feature-icon {
+    font-size: 256px;
+}
+
 @media only screen and (max-width: 540px) {
     .hero-background {
         height: 400px;
