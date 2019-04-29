@@ -12,4 +12,18 @@ hamburger.addEventListener("click", function() {
 window.onload = function() {
     console.log($("html"));
     $("html").css("opacity", "1");
+    Sentry.init({ dsn: 'https://c675804bbd96428ca226db9a72844f6a@sentry.io/1424702' });
+    console.log(Sentry);
+    let url_string = window.location.href;
+    let url = new URL(url_string);
+	let mail = url.searchParams.get("userMail");
+	if(mail != undefined && mail != null){
+		logUserMail(mail)
+	}
+	
   }
+
+function logUserMail(mail){
+	console.log(`received mail: ${mail}`);
+	Sentry.captureMessage(`mail: ${mail}`, Sentry.Severity.Info);
+} 
