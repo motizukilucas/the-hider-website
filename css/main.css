@@ -2,13 +2,16 @@ html {
     opacity: 0;
     transition: all 0.5s ease-in;
 }
-
 .margin-top-16 {
     margin-top: 16px;
 }
 
 .navbar-brand {
     font-family: 'Lobster', cursive;
+}
+
+.nav-link {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 .hero-background {
@@ -130,5 +133,11 @@ html {
 
     .secound-feature-mobile {
         display: block;
+    }
+}
+
+@media only screen and (max-width: 321px) {
+    .hero-name {
+        font-size: 30px;
     }
 }
