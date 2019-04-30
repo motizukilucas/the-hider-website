@@ -16,12 +16,43 @@ window.onload = function() {
     console.log(Sentry);
     let url_string = window.location.href;
     let url = new URL(url_string);
-	let mail = url.searchParams.get("userMail");
-	if(mail != undefined && mail != null){
-		logUserMail(mail)
-	}
+	  let mail = url.searchParams.get("userMail");
+	  if(mail != undefined && mail != null && mail != ""){
+		  logUserMail(mail)
+	  }  else {
+      logVisit(url);
+    }
 	
-  }
+}
+
+function logVisit(url) {
+    console.log(`visit from ${url}`);
+    //trackUser();
+    //Sentry.captureMessage(`visit from ${url}`, Sentry.Severity.Log);
+}
+
+function trackUser() {
+  jQuery.get("https://api.ipdata.co?api-key=test", function (response) {
+    let json = $("#response").html(JSON.stringify(response, null, 4));
+    console.log(json);
+    console.log(response);
+     //Sentry.captureMessage(`ipinfo ${response}`, Sentry.Severity.Debug);
+  }, "jsonp");
+  Se
+}
+function getIPDetails() {
+    var ipAddress = document.getElementById("txtIP").value;
+
+    var xhttp = new XMLHttpRequest();
+    xhttp.onreadystatechange = function () {
+        if (this.readyState == 4 && this.status == 200) {
+            console.log(JSON.parse(xhttp.responseText));
+        }
+    };
+    xhttp.open("GET", "http://ip-api.io/json/" + ipAddress, true);
+    xhttp.send();
+}
+
 
 function logUserMail(mail){
 	console.log(`received mail: ${mail}`);
