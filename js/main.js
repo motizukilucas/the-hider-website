@@ -16,12 +16,19 @@ window.onload = function() {
     console.log(Sentry);
     let url_string = window.location.href;
     let url = new URL(url_string);
-	let mail = url.searchParams.get("userMail");
-	if(mail != undefined && mail != null){
-		logUserMail(mail)
-	}
+	  let mail = url.searchParams.get("userMail");
+	  if(mail != undefined && mail != null && mail != ""){
+		  logUserMail(mail)
+	  }  else {
+       logVisit(url);
+    }
 	
-  }
+}
+
+function logVisit(url) {
+    console.log(`visit from ${url}`);
+    //Sentry.captureMessage(`visit from ${url}`);
+}
 
 function logUserMail(mail){
 	console.log(`received mail: ${mail}`);
