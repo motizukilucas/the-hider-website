@@ -1,0 +1,156 @@
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>The Hider | Hide your files inside images</title>
+        <link rel="icon" href="img/logo.png" type="image">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+        <link href="css/hamburgers.css" rel="stylesheet" >
+        <link href="css/main.css" rel="stylesheet" >
+        <script src="https://browser.sentry-cdn.com/5.1.1/bundle.min.js" crossorigin="anonymous"></script>
+        <meta name="image" property="og:image" content="https://thehider.surge.sh/img/usage-2.jpg">
+        <meta property="og:image:type" content="image/png">
+        <meta property="og:image:width" content="1024">
+        <meta property="og:image:height" content="1024">
+        <meta property="og:description" content="The Hider | Hide your files inside images. Protect your privacy. Hide in plain sight. Insert an image (JPG, PNG or BMP), and a file which you want to hide (it can be <b>any</b> format). The Hider will hide the file inside that image.">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">The Hider</a>
+
+            <button class="hamburger hamburger--elastic navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#features">Features<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#get-it-now">Get it now<span class="sr-only"></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#stay-in-touch">Stay in touch<span class="sr-only"></span></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div>
+            <div class="hero-background-colorOverlay">
+                <div class="hero-content">
+                    <h1 class="hero-name">
+                        The Hider Privacy Policy
+                    </h1>
+                    
+                </div>
+            </div>
+        </div>
+
+        <div class="about container">
+            <!-- first feature -->
+            <div id="features" class="row">
+                <div class="about-text offset-md-2 col-md-5 col-12">
+                    <h1 class="about-header">
+                       Offline
+                    </h1>
+                    <p>
+                        The steganography and cryptography features are implemented offline. 
+                        Therefore The Hider staff do not have access to your pictures or the files you hide inside them.
+                    </p>
+                   
+                    
+                </div>
+                <div class="col-md-3 col-12 text-center margin-top-16">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+
+            <!-- @todo try not to reapeat the text, maybe try using float or something second feature -->
+            <div class="secound-feature-desktop about-feature-spacing row">
+                <div class="offset-md-2 col-md-4 col-12 text-center margin-top-16">
+                    <img class="about-image" src="img/usage-2.jpg">
+                </div>
+                <div class="about-text col-md-5 col-12 margin-top-16">
+                    <h1 class="about-header">
+                        Active User Accounting
+                    </h1>
+                    <p>
+                        However, The Hider has active user counting system. It is unprecise by design. 
+                        Everytime The Hider launches, it reads the computer's username and calculates its hash.
+                        The hash is then sent to our server, so we can have an estimate of active user count.
+                        We don't have any means on how revert the hashes nor the intention to do so.
+                    </p>
+                </div>
+            </div>
+
+            <div class="secound-feature-mobile about-feature-spacing row">
+                <div class="about-text col-md-5 col-12 margin-top-16">
+                    <h1 class="about-header">
+                        Private by design
+                    </h1>
+                    <p>
+                        It's not that this information plain text is useful in any way, but is random enough so we could tell apart users.
+                        As the user can change it's computer name, it is not a tracking system. 
+                        If the user does so, he will be assigned another hash, and therefore cannot be tracked by this system. 
+                        This lack of precision is a design decision to ensure an extra level of privacy for the users who want it.
+                    </p>
+                </div>
+
+                <div class="offset-md-2 col-md-4 col-12 text-center margin-top-16">
+                    <img class="about-image" src="img/usage-2.jpg">
+                </div>
+            </div>
+            <!-- @todo ends -->
+
+            <!-- third feature -->
+            <div class="about-feature-spacing row">
+                <div class="about-text offset-md-2 col-md-5 col-12">
+                    <h1 class="about-header">
+                        World class cryptography.
+                    </h1>
+                    <p class="about-description margin-top-16">
+                       Your file is not only hidden, but also cyphered, with proven and opensource cryptography.
+                    </p>
+                </div>
+                <div class="col-md-3 col-12 text-center margin-top-16">
+                    <!-- <img src="img/lock.png"> -->
+                    <i class="third-feature-icon fab fa-github-alt"></i>
+                </div>
+            </div>
+        </div>
+
+        <div id="get-it-now" class="jumbotron jumbotron-fluid">
+            <div class="container text-center">
+                <h1 class="about-header">Get it now</h1>
+                <p class="about-description" style="text-align: center;">Now available on the Mac App Store and <a href="https://lucasmw.itch.io/the-hider"> itch.io. </a> </p>
+                <a href="https://itunes.apple.com/br/app/the-hider/id1355396309?l=en&mt=12"> 
+                    <img class="hero-macStore" src="img/macStore.svg"> 
+                </a>
+            </div>
+        </div>
+
+        <div id="stay-in-touch" class="container text-center" style="margin-top: 64px;">
+            <h1 class="about-header">Stay in touch</h1>
+            <p class="about-description" style="text-align: center;">Subscribe to our newsletter for the latest updates and features.</p>
+            <form>
+                <div class="form-group">
+                    <!-- <label for="exampleInputEmail1">Email address</label> -->
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="userMail">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+
+        <div class="footer text-center">
+            The Hider &copy; 2019
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
