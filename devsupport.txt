@@ -1,0 +1,7 @@
+Dev Support Terms of Service:
+
+1. Dev Support is a Subscription Donation Service designed to support the Development of Menezesworks Applications.
+2. When an user subscribes to Dev Support, it will be rewarded with the Dev Supporter Seal in the App UI.
+3. The Dev Supporter Seal assigned is linked with the tier of Dev Support chosen.
+4. No features are locked behind Dev Support Service.
+5. Dev Support is non-profit. 
