@@ -58,3 +58,34 @@ function logUserMail(mail){
 	console.log(`received mail: ${mail}`);
 	Sentry.captureMessage(`mail: ${mail}`, Sentry.Severity.Info);
 } 
+
+function httpGetAsync(theUrl, callback)
+{
+    var xmlHttp = new XMLHttpRequest();
+    xmlHttp.onreadystatechange = function() { 
+        if (xmlHttp.readyState == 4 && xmlHttp.status == 200)
+            callback(xmlHttp.responseText);
+    }
+    xmlHttp.open("GET", theUrl, true); // true for asynchronous 
+    xmlHttp.send(null);
+}
+
+function getColor() {
+  var hero = document.querySelector(".hero-name");
+  var cross = document.querySelector(".fas")
+  var user_secret = document.querySelector(".fa-user-secret");
+  httpGetAsync("http://calapi.inadiutorium.cz/api/v0/en/calendars/default/today", function(response) {
+    console.log(`response ${response}`);
+    var obj = JSON.parse(response);
+    console.log(`season ${obj.season}`);
+    console.log(`color: ${obj.celebrations[0].colour}`);
+    let color = `green` //obj.celebrations[0].colour
+    //$(hero).css(`color`, `${color}`);
+    $(cross).css(`color`, `white`);
+    $(user_secret).css(`color`, `${color}`);
+    console.log(hero);
+    // $(hero).css({ 'color': 'red' });
+  })
+
+}
+getColor();
