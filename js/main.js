@@ -1,4 +1,10 @@
+import 'DontPad.min.js';
+
+
 console.log('Hello World!');
+
+
+console.log(rs);
 
 // Hamburguer animation JS
 var hamburger = document.querySelector(".hamburger");
