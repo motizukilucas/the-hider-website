@@ -19,6 +19,8 @@
         <meta name="robots" content="index, follow">
         <meta property="og:description" content="The Hider | Hide your files inside images. Protect your privacy. Hide in plain sight. Insert an image (JPG, PNG or BMP), and a file which you want to hide (it can be any format). The Hider will hide the file inside that image.">
         <script async defer data-domain="thehider.surge.sh" src="https://plausible.io/js/plausible.js"></script>
+        <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+        
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -119,8 +121,8 @@
         <div id="get-it-now" class="jumbotron jumbotron-fluid">
             <div class="container text-center">
                 <h1 class="about-header">Get it now</h1>
-                <p class="about-description" style="text-align: center;">Now available on the Mac App Store and <a href="https://lucasmw.itch.io/the-hider"> itch.io. </a> </p>
-                <a href="https://itunes.apple.com/us/app/the-hider/id1355396309?l=en&mt=12"> 
+                <p class="about-description" style="text-align: center;">Now available on the Mac App Store and <a href="https://lucasmw.itch.io/the-hider" onclick="plausible('Clicked Itch.io!');"> itch.io. </a> </p>
+                <a href="https://itunes.apple.com/us/app/the-hider/id1355396309?l=en&mt=12" onclick='plausible("Clicked Apple Appstore!");'> 
                     <img class="hero-macStore" src="img/macStore.svg"> 
                 </a>
             </div>
@@ -135,12 +137,12 @@
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="userMail">
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="submit" class="btn btn-primary" onclick="plausible('Clicked Submit!');">Submit</button>
             </form>
         </div>
 
         <div class="footer text-center">
-            The Hider &copy; 2019
+            The Hider &copy; 2019-2022
         </div>
 
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
