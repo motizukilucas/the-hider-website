@@ -1,10 +1,8 @@
-import 'DontPad.min.js';
+
 
 
 console.log('Hello World!');
 
-
-console.log(rs);
 
 // Hamburguer animation JS
 var hamburger = document.querySelector(".hamburger");
@@ -28,14 +26,24 @@ window.onload = function() {
 	  }  else {
       logVisit(url);
     }
+    
 	
 }
 
+
+
+
+
+function logButton(url){
+  console.log(`button from ${url}`);
+  //download(url);
+}
 function logVisit(url) {
-    console.log(`visit from ${url}`);
+    
     //trackUser();
     //Sentry.captureMessage(`visit from ${url}`, Sentry.Severity.Log);
 }
+
 
 function trackUser() {
   jQuery.get("https://api.ipdata.co?api-key=test", function (response) {
@@ -82,7 +90,7 @@ function getColor() {
   var user_secret = document.querySelector(".fa-user-secret");
   $(cross).css(`color`, `white`);
   $(user_secret).css(`color`, `white`);
-  httpGetAsync("https://calapi.inadiutorium.cz/api/v0/en/calendars/default/today", function(response) {
+  httpGetAsync("https://menezesworks.com:8081/liturgy", function(response) {
     console.log(`response ${response}`);
     var obj = JSON.parse(response);
     console.log(`season ${obj.season}`);
