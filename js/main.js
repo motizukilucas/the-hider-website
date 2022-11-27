@@ -96,7 +96,22 @@ function getColor() {
     console.log(`season ${obj.season}`);
     console.log(`color: ${obj.celebrations[0].colour}`);
     let color = obj.celebrations[0].colour
-    $(hero).css(`color`, `${color}`);
+    console.log(color);
+    if(color != "white") {
+      //$(hero).css(`color`, `${color}`);
+      //$(hero).css(`opacity`, `0.7`);
+    }
+    if(color === "violet"){
+      let season = obj.celebrations[0].season;
+      let season_week = obj.celebrations[0].season_week;
+      if(season === "advent" && season_week === 3){
+        color = "violet";
+      } else if (season === "lent" && season_week === 4) {
+        color = "violet";
+      } else {
+        color = "purple";
+      }
+    }
     $(cross).css(`color`, `${color}`);
     $(user_secret).css(`color`, `${color}`);
     console.log(hero);
