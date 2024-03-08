@@ -1,8 +1,9 @@
 
 
 
-console.log('Hello World!');
+console.log('JS loaded!');
 
+var debug = true;
 
 // Hamburguer animation JS
 var hamburger = document.querySelector(".hamburger");
@@ -13,6 +14,7 @@ hamburger.addEventListener("click", function() {
   // Do something else, like open/close menu
 });
 
+
 window.onload = function() {
     console.log($("html"));
     $("html").css("opacity", "1");
@@ -20,16 +22,23 @@ window.onload = function() {
     console.log(Sentry);
     let url_string = window.location.href;
     let url = new URL(url_string);
+    if(url.searchParams == undefined || url.searchParams == null){
+      return;
+    }
 	  let mail = url.searchParams.get("userMail");
 	  if(mail != undefined && mail != null && mail != ""){
 		  logUserMail(mail)
 	  }  else {
       logVisit(url);
     }
-    
-	
 }
 
+
+function submit(mail){
+  if(mail != undefined && mail != null && mail != ""){
+    logUserMail(mail);
+  }
+}
 
 
 
@@ -71,7 +80,21 @@ function getIPDetails() {
 function logUserMail(mail){
 	console.log(`received mail: ${mail}`);
 	Sentry.captureMessage(`mail: ${mail}`, Sentry.Severity.Info);
+  sendToMyDb(mail);
 } 
+
+function sendToMyDb(mail){
+  fetch("https://menezesworks.com:8069/register/email", {
+  method: "POST",
+  body: JSON.stringify({
+    email: mail,
+    product: "The Hider"
+  }),
+  headers: {
+    "Content-type": "application/json; charset=UTF-8"
+  }
+});
+}
 
 function httpGetAsync(theUrl, callback)
 {
